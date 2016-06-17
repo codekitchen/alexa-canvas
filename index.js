@@ -80,7 +80,7 @@ function onIntent(intentRequest, session, callback) {
         intentName = intentRequest.intent.name;
 
     // Dispatch to your skill's intent handlers
-    } if ("WhatIsMyNextAssignmentIntent" === intentName) {
+    if ("WhatIsMyNextAssignmentIntent" === intentName) {
         getAssignmentFromCanvas(intent, session, callback);
     } else if ("AMAZON.HelpIntent" === intentName) {
         getWelcomeResponse(callback);

@@ -6,7 +6,7 @@ npm_install: package.json
 lambda.zip: index.js npm_install
 	echo $(TEMPDIR)
 	mkdir -p $(TEMPDIR)
-	cp index.js $(TEMPDIR)
+	cp *.js $(TEMPDIR)
 	cp -r lib $(TEMPDIR)
 	cp -r node_modules $(TEMPDIR)
 	cd $(TEMPDIR) && zip --quiet -r lambda *

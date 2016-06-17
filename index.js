@@ -7,7 +7,7 @@
  * http://amzn.to/1LGWsLG
  */
 
-var AUTH_TOKEN = '<insert token here>';
+var AUTH_TOKEN = require('./auth_token.js');
 
 // Route the incoming request based on type (LaunchRequest, IntentRequest,
 // etc.) The JSON body of the request is provided in the event parameter.
